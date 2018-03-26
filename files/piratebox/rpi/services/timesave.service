@@ -1,0 +1,12 @@
+[Unit]
+Description=MeeseeksBox timesave service
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/opt/piratebox/bin/timesave.sh /opt/piratebox/conf/piratebox.conf recover
+ExecStop=/opt/piratebox/bin/timesave.sh /opt/piratebox/conf/piratebox.conf save
+TimeoutSec=20
+
+[Install]
+WantedBy=multi-user.target

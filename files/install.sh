@@ -1,0 +1,1 @@
+tar cf - piratebox | (cd /opt/; tar xf - ) && rm -r "./piratebox" && rm "./install.sh"
