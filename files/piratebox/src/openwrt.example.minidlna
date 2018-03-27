@@ -8,7 +8,7 @@ config minidlna config
         option inotify '1'
         option enable_tivo '0'
         option strict_dlna '0'
-        option presentation_url 'http://piratebox.lan'
+        option presentation_url 'http://meeseeksbox.lan'
         option notify_interval '900'
         option serial '12345678'
         option model_number '1'
