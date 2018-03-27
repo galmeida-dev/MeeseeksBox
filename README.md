@@ -10,3 +10,4 @@ This project is meant to be a full transformation of the PirateBox project. It h
 - Unzip file
 - Run "chmod +x install.sh"
 - Run "sudo ./install.sh"
+- Reboot Pi
