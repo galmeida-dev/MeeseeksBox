@@ -11,7 +11,7 @@ cd ..
 # copy over all other files
 cp -rlf "$FULLDIR/piratebox" /opt/ 
 
-# fix droopy permissions
+# fix droopy permissions (thank you /u/Voodooboy3000)
 chmod 755 /opt/piratebox/bin/droopy
 
 # create Videos, Images and Books directories
