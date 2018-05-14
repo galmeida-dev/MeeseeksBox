@@ -11,10 +11,13 @@ cd ..
 # copy over all other files
 cp -rlf "$FULLDIR/piratebox" /opt/ 
 
+# fix droopy permissions
+chmod 755 /opt/piratebox/bin/droopy
+
 # create Videos, Images and Books directories
-mkdir /opt/piratebox/share/Shared/Videos
-mkdir /opt/piratebox/share/Shared/Images
-mkdir /opt/piratebox/share/Shared/Books
+mkdir -p /opt/piratebox/share/Shared/Videos
+mkdir -p /opt/piratebox/share/Shared/Images
+mkdir -p /opt/piratebox/share/Shared/Books
 
 # clean up
 DIR="${PWD##*/}"
